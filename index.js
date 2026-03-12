@@ -17,9 +17,13 @@ app.get("/users", (req, res) => {
             name: 'John Doe',
             email: 'john.doe@exemple.com'
         }
-    ])
+    ]);
 });
 
-app.listen(port, () => {
-    console.log(`App is listening on port ${port}`)
-});
+if (process.argv[1] === new URL(import.meta.url).pathname) {
+    app.listen(port, () => {
+        console.log(`App is listening on port ${port}`);
+    });
+}
+
+export default app;

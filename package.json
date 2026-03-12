@@ -1,10 +1,11 @@
 {
-    "name": "devops-2-app",
+    "name": "devops-3-app",
     "version": "1.0.0",
-    "description": "",
+    "description": "DevOps CI/CD course application",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node index.js",
+        "test": "node --test tests/app.test.js"
     },
     "keywords": [],
     "author": "Jean Louis Vangah",
